@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Country Search — Simple</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Пошук країни</h1>
+
+      <div class="controls">
+        <input
+          id="search-box"
+          type="text"
+          placeholder="Введи назву країни..."
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="notify" class="notify" hidden></div>
+
+      <div id="results" class="results"></div>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
