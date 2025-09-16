@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <div class="main-header container" id="home">
+        <img class="logo" src="./images/Simply Chocolate (Copy) (Copy)/Chocolate/logo.jpg" alt="logo">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#how">How it’s made?</a></li>
+          <li><a href="#products">Our products</a></li>
+          <li><a href="#top">Top sellers</a></li>
+          <li><a href="#love">Chocolate is loved</a></li>
+        </ul>
+        <div class="social-media">
+          <img src="./images/instagram.jpg" alt="instagram">
+          <img src="./images/twitter.jpg" alt="twitter">
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner container">
+        <h2 class="main-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+        </h2>
+        <div class="btns">
+          <button class="buy-btn">Buy now</button>
+          <div class="modal">
+            <div class="modal__content">
+              <span class="modal__close">&times;</span>
+              <h2><span class="taste">BUY</span> NOW</h2>
+              <div class="modal-imgs">
+                <img src="./images/img4.jpg" alt="#">
+                <img src="./images/img2.jpg" alt="#">
+                <img src="./images/img3.jpg" alt="#">
+              </div>
+
+              <form class="order-form">
+                <label for="name">Personal information</label>
+                <div class="name-form">
+                  <input type="text" id="name" placeholder="Name" required>
+                  <input type="text" id="surname" placeholder="Surname" required>
+                </div>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="| Phone number" required>
+
+                <label for="card">Card number</label>
+                <div class="card-wrapper">
+                  <input type="text" id="cardInput" placeholder="Enter card" required>
+                  <img class="card-icon" src="./images/img1.png" alt="mastercard">
+                </div>
+
+                <label for="text">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Enter text"></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="submit-modal">
+            <div class="submit-modal-content">
+              <span class="modal__close__submit">&times;</span>
+              <div class="submit-text">
+                <h2>THANK YOU!</h2>
+                <p>
+                  We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.
+                </p>
+              </div>
+              <img src="./images/ezgif-1-2d3a67b880 1.png" alt="">
+            </div>
+          </div>
+
+          <button class="tutorial-btn">
+            <a href="#how">How it’s made</a>
+          </button>
+
+          <button id="scrollButton">
+            scroll down
+            <img src="./images/fi-rr-angle-small-left.jpg" alt="strelka" class="scroll">
+          </button>
+        </div>
+      </section>
+      <section class="features-section container">
+        <div class="features">
+          <div class="feature">
+            <img src="./images/chocolate.jpg" alt="chocolate">
+            <h3>Unsurpassed taste</h3>
+            <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent
+              experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and
+              discover a new level of chocolate bliss.</p>
+            <div class="line-1"></div>
+          </div>
+          <div class="feature">
+            <img src="./images/dollar.jpg" alt="dollar">
+            <h3>Affordable price</h3>
+            <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of
+              affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or
+              quality. Browse our selection and indulge in affordable luxury today.</p>
+            <div class="line-2"></div>
+          </div>
+          <div class="feature">
+            <img src="./images/loshka.jpg" alt="loshka">
+            <h3>Own production</h3>
+            <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection.
+              From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in
+              every bite.</p>
+          </div>
+        </div>
+      </section>
+      <section class="ingridients">
+        <div class="ingridients container">
+          <div class="ingridients-title">
+            <h3>IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="taste">TASTE</span> SENSATION</h3>
+            <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the
+              sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our
+              process adds up to one exceptional taste sensation.</p>
+          </div>
+
+          <div class="flippers">
+            <div class="flip-container" id="myCard" onclick="this.classList.toggle('flipped')">
+              <div class="flipper">
+                <div class="front">
+                  <img src="./images/milk-chocolate.jpg" alt="Передняя сторона">
+                </div>
+                <div class="back">
+                  <h4>MILK CHOCOLATE</h4>
+                  <div class="flipper-btn">
+                    <a class="back-btn-ing" href="#">chocolate</a>
+                    <a href="#" class="back-btn-ben">the benefits</a>
+                  </div>
+                  <p>Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most
+                    consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in
+                    pre-Columbian
+                    times... </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-container" id="myCard" onclick="this.classList.toggle('flipped')">
+              <div class="flipper">
+                <div class="front">
+                  <img src="./images/milk.jpg" alt="Передняя сторона">
+                </div>
+                <div class="back">
+                  <h4>MILK</h4>
+                  <div class="flipper-btn">
+                    <a class="back-btn-ing" href="#">milk</a>
+                    <a href="#" class="back-btn-ben">the benefits</a>
+                  </div>
+                  <p>Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of
+                    nutrition for young mammals (including breastfed human infants) before they are able to digest solid
+                    food.Early-lactation milk, Milk is a white liquid food produced by the mammary glands of mammals. It
+                    is the primary source of nutrition for young mammals (including breastfed human infants) before they
+                    are able to digest solid food.Early-lactation milk... </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-container" id="myCard" onclick="this.classList.toggle('flipped')">
+              <div class="flipper">
+                <div class="front">
+                  <img src="./images/hazelnuts.jpg" alt="Передняя сторона">
+                </div>
+                <div class="back">
+                  <h4>NUTS</h4>
+                  <div class="flipper-btn">
+                    <a class="back-btn-ing" href="#">nuts</a>
+                    <a href="#" class="back-btn-ben">the benefits</a>
+                  </div>
+                  <p>Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten
+                    as
+                    part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart
+                    disease. They’re a good source... </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-container" id="myCard" onclick="this.classList.toggle('flipped')">
+              <div class="flipper">
+                <div class="front">
+                  <img src="./images/choc.jpg" alt="Передняя сторона">
+                </div>
+                <div class="back">
+                  <h4>SEMI - SWEET CHOCOLATE</h4>
+                  <div class="flipper-btn">
+                    <a class="back-btn-ing" href="#">chocolate</a>
+                    <a href="#" class="back-btn-ben">the benefits</a>
+                  </div>
+                  <p>Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an
+                    understanding of this type of chocolate is to compare it to a different type of... </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tutorial container" id="how">
+        <h4>HOW IT'S <span class="taste"> MADE?</span></h4>
+        <img src=".images/81595bcb99d1a98618c58583891c7d58ced22261.jpg" class="tutorial-video">
+        <div class="tutorial-step-by-step">
+          <h4>Try our chocolates today and discover the perfect balance of flavor</h4>
+          <ul class="tutorial-list">
+            <li class="tutorial-item">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa
+              powder.</li>
+            <li class="tutorial-item">At the same time, prepare a water bath. Melt the butter on it.</li>
+            <li class="tutorial-item">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone
+              spatula so that the mass becomes uniform and silky.</li>
+            <li class="tutorial-item">Heat the mixture over low heat, letting it barely boil.</li>
+            <li class="tutorial-item">Pour the chocolate into special containers (can be replaced with ice molds). Allow
+              to cool and harden.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="products container" id="products">
+        <h4>OUR <span class="taste">PRODUCTS</span></h4>
+        <div class="slider-wrapper">
+          <button class="slider-btn prev">&#10094;</button>
+          <div class="slider-container">
+            <ul class="products-list">
+              <li class="products-item"><img src="./images/orange-ch.jpg" alt=""></li>
+              <li class="products-item"><img src="./images/apple-ch.jpg" alt=""></li>
+              <li class="products-item"><img src="./images/lime-ch.jpg" alt=""></li>
+              <li class="products-item"><img src="./images/pineapple-ch.jpg" alt=""></li>
+              <li class="products-item"><img src="./images/card.jpg" alt=""></li>
+              <li class="products-item"><img src="./images/card(1).jpg" alt=""></li>
+              <li class="products-item"><img src="./images/card(2).jpg" alt=""></li>
+              <li class="products-item"><img src="./images/card(3).jpg" alt=""></li>
+            </ul>
+          </div>
+          <button class="slider-btn next">&#10095;</button>
+        </div>
+      </section>
+      <section class="sellers container" id="top">
+        <h4><span class="taste">TOP</span>SELLERS</h4>
+        <img src="./images/img02.jpg" alt="#">
+        <img src="./images/img01.jpg" alt="#">
+        <img src="./images/img03.jpg" alt="#">
+        <div class="sellers-buy">
+          <p>Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around
+            for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+          <button class="buy-btn">Buy now</button>
+          <div class="modal">
+            <div class="modal__content">
+              <span class="modal__close">&times;</span>
+              <h2><span class="taste">BUY</span> NOW</h2>
+              <div class="modal-imgs">
+                <img src="./images/img4.jpg" alt="#">
+                <img src="./images/img2.jpg" alt="#">
+                <img src="./images/img3.jpg" alt="#">
+              </div>
+
+              <form class="order-form">
+                <label for="name">Personal information</label>
+                <div class="name-form">
+                  <input type="text" id="name1" placeholder="Name" required>
+                  <input type="text" id="surname1" placeholder="Surname" required>
+                </div>
+
+                <label for="email">Email</label>
+                <input type="text" id="email1" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone1" placeholder="| Phone number" required>
+
+                <label for="card">Card number</label>
+                <div class="card-wrapper">
+                  <input type="text" id="cardInput1" placeholder="Enter card" required>
+                  <img class="card-icon" src="./images/img1.png" alt="mastercard">
+                </div>
+
+                <label for="text">Comment</label>
+                <textarea name="comment" id="comment1" placeholder="Enter text" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="submit-modal">
+            <div class="submit-modal-content">
+              <span class="modal__close__submit">&times;</span>
+              <div class="submit-text">
+                <h2>THANK YOU!</h2>
+                <p>
+                  We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.
+                </p>
+              </div>
+              <img src="./images/ezgif-1-2d3a67b880 1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedbacks container" id="love">
+        <h4><span class="taste">CHOCOLATE</span> IS LOVED</h4>
+        <div class="feedbacks-list">
+          <div class="feedback">
+            <img src="./images/img7.jpg" alt="#">
+            <div class="feedback-text">
+              <h5>Victoria Dobrzhanska</h5>
+              <p>I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer
+                chocolate.
+              </p>
+            </div>
+          </div>
+          <div class="feedback">
+            <img src="./images/img8.png" alt="#">
+            <div class="feedback-text">
+              <h5>Nazar Babenko</h5>
+              <p>This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is
+                smooth, and the chocolate is good.</p>
+            </div>
+          </div>
+          <div class="feedback">
+            <img src="./images/img10.png" alt="#">
+            <div class="feedback-text">
+              <h5>Olena Kampusch</h5>
+              <p> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside.
+                The wafer is soft but crunchy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-block">
+          <a href="#" class="review">Leave a review</a>
+          <div class="modal">
+            <div class="modal__content">
+              <span class="modal__close">&times;</span>
+              <h2>LEAVE A REVIEW ABOUT <span class="taste">OUR CHOCOLATE</span></h2>
+              <form class="order-form">
+                <input type="text" id="name2" placeholder="Name" required>
+                <input type="text" id="email2" placeholder="Email" required>
+                <input type="tel" id="phone2" placeholder="| Phone number" required>
+                <textarea name="comment" id="comment2" placeholder="Enter text" required></textarea>
+                <button type="submit" class="submit-btn">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="submit-modal">
+            <div class="submit-modal-content">
+              <span class="modal__close__submit">&times;</span>
+              <div class="submit-text">
+                <h2>THANK YOU!</h2>
+                <h2>FOR YOUR FEEDBACK!</h2>
+                <p>We are so happy to hear from you!</p>
+              </div>
+              <img src="./images/ezgif-1-2d3a67b880 1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe container">
+        <div class="subscribe">
+          <div class="subscribe-text">
+            <h3>EXPLORE OUR NEW CHOCOLATE FIRST</h3>
+            <p>From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will
+              leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each
+              piece is a work of art that is sure to please.</p>
+            <div class="subscribe-block">
+              <button class="subscribe-btn">Subscribe</button>
+              <div class="modal">
+                <div class="modal__content__subscribe">
+                  <div class="subscribe-background"> <span class="modal__close">&times;</span></div>
+                  <h2 class="subscribe-title">EXPLORE OUR <span class="taste">NEW CHOCOLATE</span> FIRST!</h2>
+                  <form class="order-form">
+                    <div class="subscribe-input">
+                      <input type="text" id="email3" placeholder="Email" required>
+                      <button type="submit" class="subscribe-btn">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="submit-modal">
+                <div class="submit-modal-content">
+                  <span class="modal__close__submit">&times;</span>
+                  <div class="submit-text">
+                    <h2>THANK YOU!</h2>
+                    <h2>FOR YOUR SUBSCRIBE!</h2>
+                  </div>
+                  <img src="./images/ezgif-1-2d3a67b880 1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <footer>
+        <div class="main-footer container">
+          <img src="./images/blocks.png" class="blocks" alt="#">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#how">How it’s made?</a></li>
+            <li><a href="#products">Our products</a></li>
+            <li><a href="#top">Top sellers</a></li>
+            <li><a href="#love">Chocolate is loved</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
