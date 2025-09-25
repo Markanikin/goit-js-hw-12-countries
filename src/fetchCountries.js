@@ -1,8 +1,8 @@
-const base = 'https://restcountries.com/v2/name';
+const BASE = 'https://restcountries.com/v2/name';
 
 export default function fetchCountries(searchQuery) {
   const fields = 'name,capital,population,flags,languages';
-  const url = `${base}/${encodeURIComponent(searchQuery)}?fields=${fields}`;
+  const url = `${BASE}/${encodeURIComponent(searchQuery)}?fields=${fields}`;
 
   return fetch(url).then(response => {
     if (!response.ok) {
